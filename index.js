@@ -6,8 +6,8 @@ const OPT = {
     "siteName" : "Dream of New Zealand",//博客名称
     "siteDescription":"Record every bit of life",//博客描述
     "keyWords":"cloudflare,KV,workers,blog",//关键字
-    "cacheZoneId":"b978de136d619268e8424a5ef9883203",//清理缓存用 cf区域 ID
-    "cacheToken":"gA4yVCNNpgDmqDnl5r8leiqpa7klFsfTOnS-ZHGX",//清理缓存用 cf API token
+    "cacheZoneId":"8f0990ac55087f22abfea3fe171df815",//清理缓存用 cf区域 ID
+    "cacheToken":"9gpwG34il0dD5KANJ6ngtPgcTV0gyY4lkk700SXb",//清理缓存用 cf API token
 	
     "pageSize" : 5,//每页文章数
     "recentlySize" : 6,//最近文章数
