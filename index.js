@@ -13,7 +13,7 @@ const OPT = {
     "recentlySize" : 6,//最近文章数
     "readMoreLength":150,//阅读更多截取长度	
     "cacheTime" : 60*60*24*0.5, //网页缓存时长(秒),建议=文章更新频率
-    "themeURL" : "https://raw.githubusercontent.com/qyd8/cloudflare-workers-blog/master/themes/JustNews/", // 模板地址,以 "/"" 结尾
+    "themeURL" : "https://raw.githubusercontent.com/chinaonevip/cloudflare-workers-blog/master/themes/JustNews/", // 模板地址,以 "/"" 结尾
     "html404" : `<b>404</b>`,//404页面代码
     "widgetOther":`
     <div id="linkcat-0" class="widget widget_links">
@@ -38,9 +38,9 @@ const OPT = {
             //这一段是初始化Waline的,visitor: true记得开启
             new Waline({
                 el:'#waline',
-                serverURL: 'https://vipzp.vercel.app',
-                appId: 'zl911JB8pgz2d4X44QNybX4r-MdYXbMMI',
-                appKey: '5BxCwIUKHQMitul37m9ABGW4',
+                serverURL: 'https://cfblog2.vercel.app',
+                appId: 'sviwJyt0qAB8rjNX1aADidye-MdYXbMMI',
+                appKey: 'NtGJhzc0m7HzDEtNzfVxjj6g',
                 avatar:'monsterid',
                 recordIP:false,
                 requiredFields:['nick'],
@@ -52,7 +52,7 @@ const OPT = {
             window.addEventListener('load', function() {
               Waline.Widget.RecentComments({
                 el: '#waline-recent',
-                serverURL: 'https://vipzp.vercel.app',
+                serverURL: 'https://cfblog2.vercel.app',
                 count: 10
               });
             });
