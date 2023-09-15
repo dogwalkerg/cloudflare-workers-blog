@@ -13,7 +13,7 @@ const OPT = {
     "recentlySize" : 6,//最近文章数
     "readMoreLength":150,//阅读更多截取长度	
     "cacheTime" : 60*60*24*0.5, //网页缓存时长(秒),建议=文章更新频率
-    "themeURL" : "https://cdn.jsdelivr.net/gh/chinaonevip/cloudflare-workers-blog@8.14/themes/JustNews/", // 模板地址,以 "/"" 结尾
+    "themeURL" : "https://cdn.jsdelivr.net/gh/dogwalkerg/cloudflare-workers-blog@8.14/themes/JustNews/", // 模板地址,以 "/"" 结尾
     "html404" : `<b>404</b>`,//404页面代码
     "widgetOther":`
     <div id="linkcat-0" class="widget widget_links">
