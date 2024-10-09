@@ -13,7 +13,7 @@
 		<link rel='stylesheet' id='font-awesome-css' href='https://cdn.jsdelivr.net/gh/qyd8/cloudflare-workers-blog@master/themes/JustNews/files/font-awesome.css?ver=6.1.2' type='text/css' media='all' />
 		<link rel='stylesheet' id='wp-block-library-css' href='https://cdn.jsdelivr.net/gh/WordPress/WordPress@5.5.3/wp-includes/css/dist/block-library/style.min.css?ver=5.6' type='text/css' media='all' />
 		<link rel='stylesheet' id='wp-components-css' href='https://cdn.jsdelivr.net/gh/WordPress/WordPress@5.5.3/wp-includes/css/dist/components/style.min.css?ver=5.6' type='text/css' media='all' />
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;400i;700;700i&display=swap" rel="stylesheet">
+		<link rel='stylesheet' id='wp-editor-font-css' href='https://fonts.geekzu.org/css?family=Noto+Serif%3A400%2C400i%2C700%2C700i&#038;ver=5.6' type='text/css' media='all' />
 		<link rel='stylesheet' id='wp-block-editor-css' href='https://cdn.jsdelivr.net/gh/WordPress/WordPress@5.5.3/wp-includes/css/dist/block-editor/style.min.css?ver=5.6' type='text/css' media='all' />
 		<link rel='stylesheet' id='wp-nux-css' href='https://cdn.jsdelivr.net/gh/WordPress/WordPress@5.5.3/wp-includes/css/dist/nux/style.min.css?ver=5.6' type='text/css' media='all' />
 		<link rel='stylesheet' id='wp-editor-css' href='https://cdn.jsdelivr.net/gh/WordPress/WordPress@5.5.3/wp-includes/css/dist/editor/style.min.css?ver=5.6' type='text/css' media='all' />
@@ -42,7 +42,7 @@
 						{{ /OPT.logo }}
 						
 						{{ ^OPT.logo }}
-						<a href="/" rel="home"><img src="https://cdn.jsdelivr.net/gh/dogwalkerg/cloudflare-workers-blog/icon.png" alt="请自定义OPT.logo"></a>
+						<a href="/" rel="home"><img src="https://cdn.jsdelivr.net/gh/chinaonevip/cloudflare-workers-blog@8.14/icon.png" alt="请自定义OPT.logo"></a>
 						{{ /OPT.logo }}
 					</div>
 				</div>
@@ -135,18 +135,6 @@
 				</div>
 
 				<aside class="sidebar">
-					
-					<div id="categories-3" class="widget widget_categories">
-						<h3 class="widget-title">
-							<span>分类目录</span></h3>
-						<ul>
-							{{ #widgetCategoryList }}
-							<li class="cat-item cat-item-5 current-cat">
-								<a aria-current="page" href="/category/{{&.}}">{{&.}}</a></li>
-							{{ /widgetCategoryList }}
-						</ul>
-					</div>
-
 					<div id="wpcom-post-thumb-2" class="widget widget_post_thumb">
 						<h3 class="widget-title">
 							<span>近期文章</span></h3>
@@ -163,6 +151,16 @@
 									<p class="item-date">{{ &createDate10 }}</p></div>
 							</li>
 							{{ /widgetRecentlyList }}									
+						</ul>
+					</div>
+					<div id="categories-3" class="widget widget_categories">
+						<h3 class="widget-title">
+							<span>分类目录</span></h3>
+						<ul>
+							{{ #widgetCategoryList }}
+							<li class="cat-item cat-item-5 current-cat">
+								<a aria-current="page" href="/category/{{&.}}">{{&.}}</a></li>
+							{{ /widgetCategoryList }}
 						</ul>
 					</div>
 					<div id="tag_cloud-3" class="widget widget_tag_cloud">
